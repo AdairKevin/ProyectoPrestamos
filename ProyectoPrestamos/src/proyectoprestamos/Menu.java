@@ -2,9 +2,12 @@ package proyectoprestamos;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
-public class Menu extends javax.swing.JFrame {
+public class Menu extends javax.swing.JFrame {    
 
     public Menu() {
         initComponents();
@@ -20,6 +23,11 @@ public class Menu extends javax.swing.JFrame {
         content.repaint();
         
         User.setText("Usuario: Adair");
+        
+        CConexion conectar = new CConexion();
+        conectar.conectarInterfaz();
+        conectado.setForeground(Color.green);
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -48,6 +56,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         User = new javax.swing.JLabel();
+        conectado = new javax.swing.JLabel();
         content = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,6 +79,11 @@ public class Menu extends javax.swing.JFrame {
         panelUsuario.setRoundBottomRight(100);
         panelUsuario.setRoundTopLeft(100);
         panelUsuario.setRoundTopRight(100);
+        panelUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelUsuarioMouseClicked(evt);
+            }
+        });
 
         jLabel2.setBackground(new java.awt.Color(242, 242, 242));
         jLabel2.setForeground(new java.awt.Color(240, 240, 240));
@@ -366,6 +380,11 @@ public class Menu extends javax.swing.JFrame {
         User.setText("User: Admin");
         Menu.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 300, -1));
 
+        conectado.setForeground(new java.awt.Color(255, 255, 255));
+        conectado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        conectado.setText("conectado");
+        Menu.add(conectado, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 220, 290, -1));
+
         getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 700));
 
         content.setBackground(new java.awt.Color(33, 33, 33));
@@ -481,6 +500,10 @@ public class Menu extends javax.swing.JFrame {
         content.repaint();
     }//GEN-LAST:event_panelHomeMousePressed
 
+    private void panelUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelUsuarioMouseClicked
+        
+    }//GEN-LAST:event_panelUsuarioMouseClicked
+
     public static void main(String args[]) {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -493,6 +516,7 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Menu;
     private javax.swing.JLabel User;
+    private javax.swing.JLabel conectado;
     private javax.swing.JPanel content;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
