@@ -18,6 +18,8 @@ public class Menu extends javax.swing.JFrame {
         content.add(p1, BorderLayout.CENTER);
         content.revalidate();
         content.repaint();
+        
+        User.setText("Usuario: Adair");
     }
 
     @SuppressWarnings("unchecked")
@@ -26,31 +28,26 @@ public class Menu extends javax.swing.JFrame {
 
         Menu = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        panelRound1 = new proyectoprestamos.PanelRound();
+        panelUsuario = new proyectoprestamos.PanelRound();
         jLabel2 = new javax.swing.JLabel();
-        panelRound2 = new proyectoprestamos.PanelRound();
+        panelHome = new proyectoprestamos.PanelRound();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        panelEmpleados = new proyectoprestamos.PanelRound();
         jLabel5 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        panelRound3 = new proyectoprestamos.PanelRound();
+        panelSolicitante = new proyectoprestamos.PanelRound();
         jLabel6 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        panelRound4 = new proyectoprestamos.PanelRound();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        panelRound5 = new proyectoprestamos.PanelRound();
+        panelEquipos = new proyectoprestamos.PanelRound();
         jLabel8 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        panelRound6 = new proyectoprestamos.PanelRound();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        panelRound7 = new proyectoprestamos.PanelRound();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        panelRound8 = new proyectoprestamos.PanelRound();
+        panelPrestamoSolicitante = new proyectoprestamos.PanelRound();
         jLabel11 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        User = new javax.swing.JLabel();
         content = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,283 +64,307 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setText("MENU");
         Menu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 300, 60));
 
-        panelRound1.setBackground(new java.awt.Color(242, 242, 242));
-        panelRound1.setPreferredSize(new java.awt.Dimension(120, 120));
-        panelRound1.setRoundBottomLeft(100);
-        panelRound1.setRoundBottomRight(100);
-        panelRound1.setRoundTopLeft(100);
-        panelRound1.setRoundTopRight(100);
+        panelUsuario.setBackground(new java.awt.Color(242, 242, 242));
+        panelUsuario.setPreferredSize(new java.awt.Dimension(120, 120));
+        panelUsuario.setRoundBottomLeft(100);
+        panelUsuario.setRoundBottomRight(100);
+        panelUsuario.setRoundTopLeft(100);
+        panelUsuario.setRoundTopRight(100);
 
         jLabel2.setBackground(new java.awt.Color(242, 242, 242));
         jLabel2.setForeground(new java.awt.Color(240, 240, 240));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-persona-de-sexo-masculino-94.png"))); // NOI18N
 
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addContainerGap()
+        javax.swing.GroupLayout panelUsuarioLayout = new javax.swing.GroupLayout(panelUsuario);
+        panelUsuario.setLayout(panelUsuarioLayout);
+        panelUsuarioLayout.setHorizontalGroup(
+            panelUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUsuarioLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
+        panelUsuarioLayout.setVerticalGroup(
+            panelUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelUsuarioLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        Menu.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
+        Menu.add(panelUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, -1));
 
-        panelRound2.setBackground(new java.awt.Color(59, 66, 191));
-        panelRound2.setRoundBottomLeft(20);
-        panelRound2.setRoundBottomRight(20);
-        panelRound2.setRoundTopLeft(20);
-        panelRound2.setRoundTopRight(20);
+        panelHome.setBackground(new java.awt.Color(59, 66, 191));
+        panelHome.setRoundBottomLeft(20);
+        panelHome.setRoundBottomRight(20);
+        panelHome.setRoundTopLeft(20);
+        panelHome.setRoundTopRight(20);
+        panelHome.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                panelHomeMouseMoved(evt);
+            }
+        });
+        panelHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                panelHomeMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                panelHomeMousePressed(evt);
+            }
+        });
+
+        jLabel14.setBackground(new java.awt.Color(242, 242, 242));
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Home");
+        jLabel14.setName(""); // NOI18N
+        jLabel14.setPreferredSize(new java.awt.Dimension(140, 30));
+
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-página-principal-25.png"))); // NOI18N
+
+        javax.swing.GroupLayout panelHomeLayout = new javax.swing.GroupLayout(panelHome);
+        panelHome.setLayout(panelHomeLayout);
+        panelHomeLayout.setHorizontalGroup(
+            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHomeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
+        );
+        panelHomeLayout.setVerticalGroup(
+            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        Menu.add(panelHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 280, -1));
+
+        panelEmpleados.setBackground(new java.awt.Color(59, 66, 191));
+        panelEmpleados.setRoundBottomLeft(20);
+        panelEmpleados.setRoundBottomRight(20);
+        panelEmpleados.setRoundTopLeft(20);
+        panelEmpleados.setRoundTopRight(20);
+        panelEmpleados.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                panelEmpleadosMouseMoved(evt);
+            }
+        });
+        panelEmpleados.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                panelEmpleadosMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                panelEmpleadosMousePressed(evt);
+            }
+        });
 
         jLabel5.setBackground(new java.awt.Color(242, 242, 242));
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Empleados");
+        jLabel5.setMaximumSize(null);
+        jLabel5.setMinimumSize(null);
+        jLabel5.setName(""); // NOI18N
+        jLabel5.setPreferredSize(new java.awt.Dimension(140, 30));
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-tarjeta-de-empleado-25 (1).png"))); // NOI18N
 
-        javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
-        panelRound2.setLayout(panelRound2Layout);
-        panelRound2Layout.setHorizontalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound2Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelEmpleadosLayout = new javax.swing.GroupLayout(panelEmpleados);
+        panelEmpleados.setLayout(panelEmpleadosLayout);
+        panelEmpleadosLayout.setHorizontalGroup(
+            panelEmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelEmpleadosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        panelRound2Layout.setVerticalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        panelEmpleadosLayout.setVerticalGroup(
+            panelEmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelEmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        Menu.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 280, 30));
+        Menu.add(panelEmpleados, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 280, -1));
 
-        panelRound3.setBackground(new java.awt.Color(59, 66, 191));
-        panelRound3.setRoundBottomLeft(20);
-        panelRound3.setRoundBottomRight(20);
-        panelRound3.setRoundTopLeft(20);
-        panelRound3.setRoundTopRight(20);
+        panelSolicitante.setBackground(new java.awt.Color(59, 66, 191));
+        panelSolicitante.setPreferredSize(new java.awt.Dimension(270, 30));
+        panelSolicitante.setRoundBottomLeft(20);
+        panelSolicitante.setRoundBottomRight(20);
+        panelSolicitante.setRoundTopLeft(20);
+        panelSolicitante.setRoundTopRight(20);
+        panelSolicitante.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                panelSolicitanteMouseMoved(evt);
+            }
+        });
+        panelSolicitante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                panelSolicitanteMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                panelSolicitanteMousePressed(evt);
+            }
+        });
 
         jLabel6.setBackground(new java.awt.Color(242, 242, 242));
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Profesores");
+        jLabel6.setText("Solicitante");
+        jLabel6.setMaximumSize(null);
+        jLabel6.setMinimumSize(null);
+        jLabel6.setName(""); // NOI18N
+        jLabel6.setPreferredSize(new java.awt.Dimension(140, 30));
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-colaborador-hombre-25.png"))); // NOI18N
 
-        javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
-        panelRound3.setLayout(panelRound3Layout);
-        panelRound3Layout.setHorizontalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound3Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelSolicitanteLayout = new javax.swing.GroupLayout(panelSolicitante);
+        panelSolicitante.setLayout(panelSolicitanteLayout);
+        panelSolicitanteLayout.setHorizontalGroup(
+            panelSolicitanteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSolicitanteLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        panelRound3Layout.setVerticalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        panelSolicitanteLayout.setVerticalGroup(
+            panelSolicitanteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelSolicitanteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        Menu.add(panelRound3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
+        Menu.add(panelSolicitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 280, -1));
 
-        panelRound4.setBackground(new java.awt.Color(59, 66, 191));
-        panelRound4.setRoundBottomLeft(20);
-        panelRound4.setRoundBottomRight(20);
-        panelRound4.setRoundTopLeft(20);
-        panelRound4.setRoundTopRight(20);
-
-        jLabel7.setBackground(new java.awt.Color(242, 242, 242));
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Alumnos");
-
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-estudiante-masculino-25.png"))); // NOI18N
-
-        javax.swing.GroupLayout panelRound4Layout = new javax.swing.GroupLayout(panelRound4);
-        panelRound4.setLayout(panelRound4Layout);
-        panelRound4Layout.setHorizontalGroup(
-            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        panelRound4Layout.setVerticalGroup(
-            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        Menu.add(panelRound4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
-
-        panelRound5.setBackground(new java.awt.Color(59, 66, 191));
-        panelRound5.setRoundBottomLeft(20);
-        panelRound5.setRoundBottomRight(20);
-        panelRound5.setRoundTopLeft(20);
-        panelRound5.setRoundTopRight(20);
+        panelEquipos.setBackground(new java.awt.Color(59, 66, 191));
+        panelEquipos.setRoundBottomLeft(20);
+        panelEquipos.setRoundBottomRight(20);
+        panelEquipos.setRoundTopLeft(20);
+        panelEquipos.setRoundTopRight(20);
+        panelEquipos.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                panelEquiposMouseMoved(evt);
+            }
+        });
+        panelEquipos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                panelEquiposMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                panelEquiposMousePressed(evt);
+            }
+        });
 
         jLabel8.setBackground(new java.awt.Color(242, 242, 242));
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Laptops");
+        jLabel8.setText("Equipos");
+        jLabel8.setMaximumSize(null);
+        jLabel8.setMinimumSize(null);
+        jLabel8.setName(""); // NOI18N
+        jLabel8.setPreferredSize(new java.awt.Dimension(140, 30));
 
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-elementos-de-tecnología-25.png"))); // NOI18N
 
-        javax.swing.GroupLayout panelRound5Layout = new javax.swing.GroupLayout(panelRound5);
-        panelRound5.setLayout(panelRound5Layout);
-        panelRound5Layout.setHorizontalGroup(
-            panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound5Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelEquiposLayout = new javax.swing.GroupLayout(panelEquipos);
+        panelEquipos.setLayout(panelEquiposLayout);
+        panelEquiposLayout.setHorizontalGroup(
+            panelEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelEquiposLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        panelRound5Layout.setVerticalGroup(
-            panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        panelEquiposLayout.setVerticalGroup(
+            panelEquiposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        Menu.add(panelRound5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, -1));
+        Menu.add(panelEquipos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 280, -1));
 
-        panelRound6.setBackground(new java.awt.Color(59, 66, 191));
-        panelRound6.setRoundBottomLeft(20);
-        panelRound6.setRoundBottomRight(20);
-        panelRound6.setRoundTopLeft(20);
-        panelRound6.setRoundTopRight(20);
-
-        jLabel9.setBackground(new java.awt.Color(242, 242, 242));
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Proyectores");
-
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-proyector-de-video-25.png"))); // NOI18N
-
-        javax.swing.GroupLayout panelRound6Layout = new javax.swing.GroupLayout(panelRound6);
-        panelRound6.setLayout(panelRound6Layout);
-        panelRound6Layout.setHorizontalGroup(
-            panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        panelRound6Layout.setVerticalGroup(
-            panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        Menu.add(panelRound6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, -1, -1));
-
-        panelRound7.setBackground(new java.awt.Color(59, 66, 191));
-        panelRound7.setRoundBottomLeft(20);
-        panelRound7.setRoundBottomRight(20);
-        panelRound7.setRoundTopLeft(20);
-        panelRound7.setRoundTopRight(20);
-
-        jLabel10.setBackground(new java.awt.Color(242, 242, 242));
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Alumnos");
-
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-estudiante-masculino-25 (2).png"))); // NOI18N
-
-        javax.swing.GroupLayout panelRound7Layout = new javax.swing.GroupLayout(panelRound7);
-        panelRound7.setLayout(panelRound7Layout);
-        panelRound7Layout.setHorizontalGroup(
-            panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        panelRound7Layout.setVerticalGroup(
-            panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        Menu.add(panelRound7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, -1, -1));
-
-        panelRound8.setBackground(new java.awt.Color(59, 66, 191));
-        panelRound8.setRoundBottomLeft(20);
-        panelRound8.setRoundBottomRight(20);
-        panelRound8.setRoundTopLeft(20);
-        panelRound8.setRoundTopRight(20);
+        panelPrestamoSolicitante.setBackground(new java.awt.Color(59, 66, 191));
+        panelPrestamoSolicitante.setRoundBottomLeft(20);
+        panelPrestamoSolicitante.setRoundBottomRight(20);
+        panelPrestamoSolicitante.setRoundTopLeft(20);
+        panelPrestamoSolicitante.setRoundTopRight(20);
+        panelPrestamoSolicitante.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                panelPrestamoSolicitanteMouseMoved(evt);
+            }
+        });
+        panelPrestamoSolicitante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                panelPrestamoSolicitanteMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                panelPrestamoSolicitanteMousePressed(evt);
+            }
+        });
 
         jLabel11.setBackground(new java.awt.Color(242, 242, 242));
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Profesores");
+        jLabel11.setText("Solicitante");
+        jLabel11.setMaximumSize(null);
+        jLabel11.setMinimumSize(null);
+        jLabel11.setName(""); // NOI18N
+        jLabel11.setPreferredSize(new java.awt.Dimension(140, 30));
 
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/icons8-colaborador-hombre-25 (1).png"))); // NOI18N
 
-        javax.swing.GroupLayout panelRound8Layout = new javax.swing.GroupLayout(panelRound8);
-        panelRound8.setLayout(panelRound8Layout);
-        panelRound8Layout.setHorizontalGroup(
-            panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound8Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelPrestamoSolicitanteLayout = new javax.swing.GroupLayout(panelPrestamoSolicitante);
+        panelPrestamoSolicitante.setLayout(panelPrestamoSolicitanteLayout);
+        panelPrestamoSolicitanteLayout.setHorizontalGroup(
+            panelPrestamoSolicitanteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPrestamoSolicitanteLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        panelRound8Layout.setVerticalGroup(
-            panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        panelPrestamoSolicitanteLayout.setVerticalGroup(
+            panelPrestamoSolicitanteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        Menu.add(panelRound8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 630, -1, -1));
+        Menu.add(panelPrestamoSolicitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, 280, -1));
 
         jLabel3.setBackground(new java.awt.Color(242, 242, 242));
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Prestamos");
-        Menu.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 530, 300, -1));
+        Menu.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, 290, -1));
 
         jLabel4.setBackground(new java.awt.Color(242, 242, 242));
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Registros");
-        Menu.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 300, -1));
+        Menu.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 300, -1));
+
+        User.setBackground(new java.awt.Color(255, 255, 255));
+        User.setForeground(new java.awt.Color(255, 255, 255));
+        User.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        User.setText("User: Admin");
+        Menu.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 300, -1));
 
         getContentPane().add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 700));
 
@@ -353,17 +374,112 @@ public class Menu extends javax.swing.JFrame {
         content.setLayout(contentLayout);
         contentLayout.setHorizontalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGap(0, 990, Short.MAX_VALUE)
         );
         contentLayout.setVerticalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 700, Short.MAX_VALUE)
         );
 
-        getContentPane().add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 1000, 700));
+        getContentPane().add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 990, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void panelEmpleadosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelEmpleadosMouseExited
+        panelEmpleados.setBackground(new Color(59,66,191));
+    }//GEN-LAST:event_panelEmpleadosMouseExited
+
+    private void panelEmpleadosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelEmpleadosMousePressed
+        Empleados p1 = new Empleados();
+        p1.setSize(1000, 700);
+        p1.setLocation(0,0);
+        
+        content.removeAll();
+        content.add(p1, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_panelEmpleadosMousePressed
+
+    private void panelEmpleadosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelEmpleadosMouseMoved
+        panelEmpleados.setBackground(new Color(98, 116, 218));
+    }//GEN-LAST:event_panelEmpleadosMouseMoved
+
+    private void panelSolicitanteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelSolicitanteMouseExited
+        panelSolicitante.setBackground(new Color(59,66,191));
+    }//GEN-LAST:event_panelSolicitanteMouseExited
+
+    private void panelSolicitanteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelSolicitanteMousePressed
+        Solicitante p1 = new Solicitante();
+        p1.setSize(1000, 700);
+        p1.setLocation(0,0);
+        
+        content.removeAll();
+        content.add(p1, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_panelSolicitanteMousePressed
+
+    private void panelSolicitanteMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelSolicitanteMouseMoved
+        panelSolicitante.setBackground(new Color(98, 116, 218));
+    }//GEN-LAST:event_panelSolicitanteMouseMoved
+
+    private void panelEquiposMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelEquiposMouseExited
+        panelEquipos.setBackground(new Color(59,66,191));
+    }//GEN-LAST:event_panelEquiposMouseExited
+
+    private void panelEquiposMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelEquiposMousePressed
+        Equipos p1 = new Equipos();
+        p1.setSize(1000, 700);
+        p1.setLocation(0,0);
+        
+        content.removeAll();
+        content.add(p1, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_panelEquiposMousePressed
+
+    private void panelEquiposMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelEquiposMouseMoved
+        panelEquipos.setBackground(new Color(98, 116, 218));
+    }//GEN-LAST:event_panelEquiposMouseMoved
+
+    private void panelPrestamoSolicitanteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelPrestamoSolicitanteMouseExited
+        panelPrestamoSolicitante.setBackground(new Color(59,66,191));
+    }//GEN-LAST:event_panelPrestamoSolicitanteMouseExited
+
+    private void panelPrestamoSolicitanteMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelPrestamoSolicitanteMousePressed
+        SolicitantePrestamo p1 = new SolicitantePrestamo();
+        p1.setSize(1000, 700);
+        p1.setLocation(0,0);
+        
+        content.removeAll();
+        content.add(p1, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_panelPrestamoSolicitanteMousePressed
+
+    private void panelPrestamoSolicitanteMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelPrestamoSolicitanteMouseMoved
+        panelPrestamoSolicitante.setBackground(new Color(98, 116, 218));
+    }//GEN-LAST:event_panelPrestamoSolicitanteMouseMoved
+
+    private void panelHomeMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelHomeMouseMoved
+        panelHome.setBackground(new Color(98, 116, 218));
+    }//GEN-LAST:event_panelHomeMouseMoved
+
+    private void panelHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelHomeMouseExited
+        panelHome.setBackground(new Color(59,66,191));
+    }//GEN-LAST:event_panelHomeMouseExited
+
+    private void panelHomeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelHomeMousePressed
+        Home p1 = new Home();
+        p1.setSize(1000, 700);
+        p1.setLocation(0,0);
+        
+        content.removeAll();
+        content.add(p1, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_panelHomeMousePressed
 
     public static void main(String args[]) {
 
@@ -376,32 +492,27 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Menu;
+    private javax.swing.JLabel User;
     private javax.swing.JPanel content;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private proyectoprestamos.PanelRound panelRound1;
-    private proyectoprestamos.PanelRound panelRound2;
-    private proyectoprestamos.PanelRound panelRound3;
-    private proyectoprestamos.PanelRound panelRound4;
-    private proyectoprestamos.PanelRound panelRound5;
-    private proyectoprestamos.PanelRound panelRound6;
-    private proyectoprestamos.PanelRound panelRound7;
-    private proyectoprestamos.PanelRound panelRound8;
+    private proyectoprestamos.PanelRound panelEmpleados;
+    private proyectoprestamos.PanelRound panelEquipos;
+    private proyectoprestamos.PanelRound panelHome;
+    private proyectoprestamos.PanelRound panelPrestamoSolicitante;
+    private proyectoprestamos.PanelRound panelSolicitante;
+    private proyectoprestamos.PanelRound panelUsuario;
     // End of variables declaration//GEN-END:variables
 }
