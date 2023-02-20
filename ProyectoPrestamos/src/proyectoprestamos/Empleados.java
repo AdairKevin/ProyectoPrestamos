@@ -64,7 +64,7 @@ public class Empleados extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 102, 102));
+        setBackground(new java.awt.Color(33, 33, 33));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -270,6 +270,7 @@ public class Empleados extends javax.swing.JPanel {
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(29, 29, 29)
                     .addComponent(jLabel13)
+                    .addGap(0, 0, 0)
                     .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(378, Short.MAX_VALUE)))
         );

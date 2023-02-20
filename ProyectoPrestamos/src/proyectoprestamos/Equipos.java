@@ -17,7 +17,10 @@ import javax.swing.table.DefaultTableModel;
  * @author SPARTAN PC
  */
 public class Equipos extends javax.swing.JPanel {
-
+    
+    int filaseleccionada;
+    DefaultTableModel modelo = new DefaultTableModel();
+    String dato;
     
     public Equipos() {
         initComponents();
@@ -315,7 +318,14 @@ public class Equipos extends javax.swing.JPanel {
             System.out.println(ex.toString());
         }
     }//GEN-LAST:event_btnEliminarActionPerformed
+    
+    private void buscar(String buscar){
+    Equipos p=new Equipos();
 
+    DefaultTableModel modelo=p.Buscarper(buscar);
+    tablaEquipos.setModel(modelo);
+    }
+    
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
         buscar(tfBuscarEquipo.getText());
     }//GEN-LAST:event_btnBuscarActionPerformed
