@@ -393,14 +393,14 @@ public class Menu extends javax.swing.JFrame {
         content.setLayout(contentLayout);
         contentLayout.setHorizontalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
+            .addGap(0, 1000, Short.MAX_VALUE)
         );
         contentLayout.setVerticalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 700, Short.MAX_VALUE)
         );
 
-        getContentPane().add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 990, 700));
+        getContentPane().add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 1000, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
