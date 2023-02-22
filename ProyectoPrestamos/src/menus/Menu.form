@@ -64,7 +64,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Container class="proyectoprestamos.PanelRound" name="panelUsuario">
+        <Container class="utils.PanelRound" name="panelUsuario">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="f2" green="f2" red="f2" type="rgb"/>
@@ -123,7 +123,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="proyectoprestamos.PanelRound" name="panelHome">
+        <Container class="utils.PanelRound" name="panelHome">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="bf" green="42" red="3b" type="rgb"/>
@@ -192,7 +192,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="proyectoprestamos.PanelRound" name="panelEmpleados">
+        <Container class="utils.PanelRound" name="panelEmpleados">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="bf" green="42" red="3b" type="rgb"/>
@@ -269,7 +269,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="proyectoprestamos.PanelRound" name="panelSolicitante">
+        <Container class="utils.PanelRound" name="panelSolicitante">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="bf" green="42" red="3b" type="rgb"/>
@@ -349,7 +349,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="proyectoprestamos.PanelRound" name="panelEquipos">
+        <Container class="utils.PanelRound" name="panelEquipos">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="bf" green="42" red="3b" type="rgb"/>
@@ -424,7 +424,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="proyectoprestamos.PanelRound" name="panelPrestamoSolicitante">
+        <Container class="utils.PanelRound" name="panelPrestamoSolicitante">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="bf" green="42" red="3b" type="rgb"/>
