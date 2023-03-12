@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package menus;
+package features.menu;
 
 /**
  *
  * @author SPARTAN PC
  */
-public class Solicitante extends javax.swing.JPanel {
+public class SolicitantePrestamo extends javax.swing.JPanel {
 
     /**
-     * Creates new form Solicitante
+     * Creates new form SolicitantePrestamo
      */
-    public Solicitante() {
+    public SolicitantePrestamo() {
         initComponents();
     }
 
@@ -27,7 +27,7 @@ public class Solicitante extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setBackground(new java.awt.Color(0, 255, 204));
+        setBackground(new java.awt.Color(255, 51, 204));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

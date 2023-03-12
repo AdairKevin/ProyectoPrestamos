@@ -1,18 +1,18 @@
 package features.login;
 
-import menus.Home;
+import features.menu.Home;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
-import menus.Menu;
+import features.menu.Menu;
 import utils.*;
 
 public class Login extends javax.swing.JFrame {
 
     //Establece la conexion con mysql
-    menus.CConexion conexion = new menus.CConexion();
+    features.menu.CConexion conexion = new features.menu.CConexion();
     Connection con = conexion.estableceConexion();
 
     public Login() {
@@ -216,7 +216,7 @@ public class Login extends javax.swing.JFrame {
                 resultado = 1;
             }
             if (resultado == 1) {
-                goToInterfazP();
+                goToMenu();
             } else {
                 MessageUtils.showWarning("Datos Incorrectos");
             }
@@ -229,7 +229,7 @@ public class Login extends javax.swing.JFrame {
         validarUsuario();
     }//GEN-LAST:event_btn_loginActionPerformed
 
-    private void goToInterfazP() {
+    private void goToMenu() {
         new Menu().setVisible(true);
         this.dispose();
     }

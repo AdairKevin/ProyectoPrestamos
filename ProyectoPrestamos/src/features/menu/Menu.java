@@ -1,8 +1,8 @@
-package menus;
+package features.menu;
 
-import menus.Home;
-import menus.Equipos;
-import menus.Empleados;
+import features.menu.Home;
+import features.menu.Equipos;
+import features.menu.Empleados;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.sql.Connection;
