@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+import menus.Menu;
 import utils.*;
 
 public class Login extends javax.swing.JFrame {
@@ -229,7 +230,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_loginActionPerformed
 
     private void goToInterfazP() {
-        new Home().setVisible(true);
+        new Menu().setVisible(true);
         this.dispose();
     }
 
