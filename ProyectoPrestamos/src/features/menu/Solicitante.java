@@ -1,18 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package features.menu;
 
-/**
- *
- * @author SPARTAN PC
- */
 public class Solicitante extends javax.swing.JPanel {
 
     /**
-     * Creates new form Solicitante
+     * Creates new form SolicitantePrestamo
      */
     public Solicitante() {
         initComponents();
@@ -27,21 +19,321 @@ public class Solicitante extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setBackground(new java.awt.Color(0, 255, 204));
+        txtBuscarMatricula2 = new javax.swing.JLabel();
+        txtNombre1 = new javax.swing.JLabel();
+        tfNombre1 = new javax.swing.JTextField();
+        txtApePat1 = new javax.swing.JLabel();
+        tfApePat1 = new javax.swing.JTextField();
+        txtApeMat1 = new javax.swing.JLabel();
+        tfApeMat1 = new javax.swing.JTextField();
+        txtMatricula1 = new javax.swing.JLabel();
+        tfMatricula1 = new javax.swing.JTextField();
+        txtCarreras2 = new javax.swing.JLabel();
+        cbSolicitante1 = new javax.swing.JComboBox<>();
+        txtBuscarMatricula3 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tablaSolicitante1 = new javax.swing.JTable();
+        btnEliminar1 = new javax.swing.JButton();
+        btnModificar1 = new javax.swing.JButton();
+        btnGuardar1 = new javax.swing.JButton();
+        cbCoordi1 = new javax.swing.JComboBox<>();
+        txtCarreras3 = new javax.swing.JLabel();
+        btnBuscar1 = new javax.swing.JButton();
+        tfBuscarMatricula1 = new javax.swing.JTextField();
+
+        setBackground(new java.awt.Color(238, 238, 238));
+
+        txtBuscarMatricula2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        txtBuscarMatricula2.setText("Gestionar Solicitante");
+
+        txtNombre1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        txtNombre1.setText("Nombre");
+
+        tfNombre1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        tfNombre1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfNombre1ActionPerformed(evt);
+            }
+        });
+
+        txtApePat1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        txtApePat1.setText("Apellido paterno");
+
+        tfApePat1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        tfApePat1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfApePat1ActionPerformed(evt);
+            }
+        });
+
+        txtApeMat1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        txtApeMat1.setText("Apellido materno");
+
+        tfApeMat1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        tfApeMat1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfApeMat1ActionPerformed(evt);
+            }
+        });
+
+        txtMatricula1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        txtMatricula1.setText("Matrícula");
+
+        tfMatricula1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        tfMatricula1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfMatricula1ActionPerformed(evt);
+            }
+        });
+
+        txtCarreras2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        txtCarreras2.setText("Tipo Solicitante");
+
+        cbSolicitante1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        cbSolicitante1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Estudiante", "Profesor" }));
+        cbSolicitante1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        cbSolicitante1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbSolicitante1ActionPerformed(evt);
+            }
+        });
+
+        txtBuscarMatricula3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        txtBuscarMatricula3.setText("Buscar por nombre");
+
+        tablaSolicitante1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        tablaSolicitante1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        tablaSolicitante1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaSolicitante1MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tablaSolicitante1);
+
+        btnEliminar1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        btnEliminar1.setText("Eliminar");
+        btnEliminar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminar1ActionPerformed(evt);
+            }
+        });
+
+        btnModificar1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        btnModificar1.setText("Modificar");
+        btnModificar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificar1ActionPerformed(evt);
+            }
+        });
+
+        btnGuardar1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        btnGuardar1.setText("Guardar");
+        btnGuardar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardar1ActionPerformed(evt);
+            }
+        });
+
+        cbCoordi1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        cbCoordi1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Ingeniería", "CPD", "N/A" }));
+        cbCoordi1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        cbCoordi1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbCoordi1ActionPerformed(evt);
+            }
+        });
+
+        txtCarreras3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        txtCarreras3.setText("Coordinación");
+
+        btnBuscar1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        btnBuscar1.setText("Buscar");
+        btnBuscar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscar1ActionPerformed(evt);
+            }
+        });
+
+        tfBuscarMatricula1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfBuscarMatricula1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtCarreras3, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(48, 48, 48)
+                        .addComponent(cbCoordi1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtCarreras2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(48, 48, 48)
+                        .addComponent(cbSolicitante1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(txtMatricula1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tfMatricula1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(txtApeMat1)
+                            .addGap(48, 48, 48)
+                            .addComponent(tfApeMat1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtBuscarMatricula2)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(btnGuardar1)
+                            .addGap(18, 18, 18)
+                            .addComponent(btnModificar1)
+                            .addGap(18, 18, 18)
+                            .addComponent(btnEliminar1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtApePat1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(48, 48, 48)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tfNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(tfApePat1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txtBuscarMatricula3)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tfBuscarMatricula1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBuscar1))
+                .addGap(146, 146, 146))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtBuscarMatricula3)
+                            .addComponent(tfBuscarMatricula1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(btnBuscar1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtBuscarMatricula2)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtNombre1)
+                            .addComponent(tfNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtApePat1)
+                            .addComponent(tfApePat1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtApeMat1)
+                            .addComponent(tfApeMat1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtMatricula1)
+                            .addComponent(tfMatricula1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtCarreras2)
+                            .addComponent(cbSolicitante1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtCarreras3)
+                            .addComponent(cbCoordi1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnGuardar1)
+                            .addComponent(btnModificar1)
+                            .addComponent(btnEliminar1))))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(44, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void tfNombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNombre1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfNombre1ActionPerformed
+
+    private void tfApePat1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfApePat1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfApePat1ActionPerformed
+
+    private void tfApeMat1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfApeMat1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfApeMat1ActionPerformed
+
+    private void tfMatricula1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfMatricula1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfMatricula1ActionPerformed
+
+    private void cbSolicitante1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbSolicitante1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbSolicitante1ActionPerformed
+
+    private void tablaSolicitante1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaSolicitante1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tablaSolicitante1MouseClicked
+
+    private void btnEliminar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminar1ActionPerformed
+
+    private void btnModificar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnModificar1ActionPerformed
+
+    private void btnGuardar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardar1ActionPerformed
+
+    private void cbCoordi1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCoordi1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbCoordi1ActionPerformed
+
+    private void btnBuscar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscar1ActionPerformed
+
+    private void tfBuscarMatricula1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfBuscarMatricula1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfBuscarMatricula1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar1;
+    private javax.swing.JButton btnEliminar1;
+    private javax.swing.JButton btnGuardar1;
+    private javax.swing.JButton btnModificar1;
+    private javax.swing.JComboBox<String> cbCoordi1;
+    private javax.swing.JComboBox<String> cbSolicitante1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable tablaSolicitante1;
+    private javax.swing.JTextField tfApeMat1;
+    private javax.swing.JTextField tfApePat1;
+    private javax.swing.JTextField tfBuscarMatricula1;
+    private javax.swing.JTextField tfMatricula1;
+    private javax.swing.JTextField tfNombre1;
+    private javax.swing.JLabel txtApeMat1;
+    private javax.swing.JLabel txtApePat1;
+    private javax.swing.JLabel txtBuscarMatricula2;
+    private javax.swing.JLabel txtBuscarMatricula3;
+    private javax.swing.JLabel txtCarreras2;
+    private javax.swing.JLabel txtCarreras3;
+    private javax.swing.JLabel txtMatricula1;
+    private javax.swing.JLabel txtNombre1;
     // End of variables declaration//GEN-END:variables
 }

@@ -7,6 +7,7 @@ public class Fonts {
 
     private Font font = null;
     public String lato = "Lato-Regular.ttf";
+// Font.PLAIN = 0 , Font.BOLD = 1 , Font.ITALIC = 2
 
     public Font fuente(String fontName, int style, float size) {
         try {
