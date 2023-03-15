@@ -31,7 +31,7 @@ public class ComboBoxStyle extends BasicComboBoxUI {
     @Override
     protected JButton createArrowButton() {
         JButton btn = new JButton();
-        btn.setIcon(new ImageIcon(getClass().getResource("/images/ic_caret_down.png")));
+        btn.setIcon(new ImageIcon(getClass().getResource("/img/ic_caret_down.png")));
         btn.setBorder(BorderFactory.createLineBorder(new Color(255, 255, 255), 5));
         btn.setContentAreaFilled(false);
         return btn;
